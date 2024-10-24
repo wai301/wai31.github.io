@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เครื่องสุ่มโจทย์คณิตศาสตร์ - คริสต์มาสสเปเชียล</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <h1>🎄 เครื่องสุ่มโจทย์คณิตศาสตร์ - คริสต์มาสสเปเชียล 🎅</h1>
+        <select id="topic-select">
+            <option value="complex">จำนวนเชิงซ้อน</option>
+            <option value="probability">ความน่าจะเป็น</option>
+        </select>
+        <div class="difficulty-buttons">
+            <button id="easy-btn" class="difficulty-btn active">🍬 ง่าย</button>
+            <button id="medium-btn" class="difficulty-btn">🎁 ปานกลาง</button>
+            <button id="hard-btn" class="difficulty-btn">🎄 ยาก</button>
+        </div>
+        <p id="question"></p>
+        <button id="generate-btn">🎁 สุ่มโจทย์ใหม่</button>
+        <button id="show-answer-btn">🔔 แสดงคำตอบ</button>
+        <div id="answer-section" style="display: none;">
+            <p id="answer"></p>
+            <pre id="solution"></pre>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
